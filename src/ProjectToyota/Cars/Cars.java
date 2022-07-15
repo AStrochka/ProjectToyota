@@ -14,9 +14,10 @@ public abstract class Cars {
     private Electrik electrik;
     private Lights lights;
     private Wheel[] wheels;
+    private Country country;
 
     public Cars(int speedMax, String color, TransmissionType transmission, boolean isMoving, double price,
-                GasTank gasTank, Engin engin, Electrik electrik, Lights lights, Wheel[] wheels) {
+                GasTank gasTank, Engin engin, Electrik electrik, Lights lights, Wheel[] wheels, Country country) {
         this.speedMax = speedMax;
         this.color = color;
         this.transmission = transmission;
@@ -27,6 +28,7 @@ public abstract class Cars {
         this.electrik = electrik;
         this.lights = lights;
         this.wheels = wheels;
+        this.country = country;
     }
 
     public void start() throws StartCarException {
